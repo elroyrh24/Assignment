@@ -3,8 +3,12 @@ import math
 xA, yA = input('Enter the coordinates of point A: ').split(', ', 2)
 xB, yB = input('Enter the coordinates of point B: ').split(',', 2)
 
-slope = (int(yB) - int(yA)) / (int(xB) - int(xA))
-euclid = math.dist([int(xA), int(yA)], [int(xB), int(yB)])
+xA = int(xA)
+xB = int(xB)
+yA = int(yA)
+yB = int(yB)
+slope = (yB - yA) / (xB - xA)
+euclid = round(math.dist([xA, yA], [xB, yB]), 3)
 
 print(
     f"""
