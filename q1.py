@@ -1,6 +1,5 @@
 digits = input("Enter the four digit number: ")
-total = int(digits[::])
-reverse =''
+total = 0
 for number in digits:
     total = total + int(number)
 print(f"""

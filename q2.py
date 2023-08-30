@@ -7,6 +7,7 @@ xA = int(xA)
 xB = int(xB)
 yA = int(yA)
 yB = int(yB)
+
 slope = (yB - yA) / (xB - xA)
 euclid = round(math.dist([xA, yA], [xB, yB]), 3)
 
