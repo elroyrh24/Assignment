@@ -2,8 +2,8 @@
 import math
 
 #tanya coordinates
-xA, yA = input('Enter the coordinates of point A: ').split(',', 2)
-xB, yB = input('Enter the coordinates of point B: ').split(',', 2)
+xA, yA = input('Enter the coordinates of point A: ').split()
+xB, yB = input('Enter the coordinates of point B: ').split()
 
 #ganti jawaban menjadi integer untuk hitungan
 xA = int(xA)
