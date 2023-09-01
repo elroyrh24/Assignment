@@ -1,3 +1,5 @@
+toberemoved = '.'
+
 def discount(ogPrice):
     ogPrice -= ogPrice * 0.05
     return ogPrice
@@ -10,12 +12,6 @@ def limitCheck(Salary):
             return False
     else:
         return
-    
-
-DirtyListGaji = list(
-    input("\nEnter the salaries : ").strip().split())
-
-toberemoved = '.'
 
 def cleaning(Number):
     cleanedNum = ''
@@ -23,7 +19,6 @@ def cleaning(Number):
         if n not in toberemoved:
             cleanedNum += n
     return cleanedNum
-
     
 def TrueClean(Pay):
     calcPay = int(cleaning(Pay))
@@ -32,6 +27,7 @@ def TrueClean(Pay):
     else:
         return 
 
-
+DirtyListGaji = list(
+    input("\nEnter the salaries : ").strip().split())
 
 print(str(list(filter(TrueClean, DirtyListGaji))))
